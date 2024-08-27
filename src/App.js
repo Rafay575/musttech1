@@ -19,7 +19,7 @@ function App() {
         <Route path='/pricing' element={<Pricing />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/service' element={<Service />} />
+        <Route path='/services' element={<Service />} />
         
         <Route path='/service-detail/:id' element={<ServiceDetail />} />
 

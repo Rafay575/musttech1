@@ -40,6 +40,22 @@
   line-height: 18.75px;
 }
 
+.header ul li {
+  position: relative;
+}
+
+.header ul li .line {
+  position: absolute;
+  bottom: -4px; /* Adjust this value if needed */
+  left: 0;
+  height: 2px;
+  background-color: var(--font-color-1); /* Adjust color to your preference */
+}
+
+.header ul li a.active {
+  color: var(--font-color-1);
+}
+
 .header li a {
   text-decoration: none;
   color: white;
@@ -177,6 +193,11 @@
 
 .footer .socail img {
   margin-right: 10px;
+}
+
+.footer .socail img {
+  text-decoration: none;
+  color: white;
 }
 
 .footer .icon {

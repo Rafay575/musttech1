@@ -96,14 +96,14 @@ img {
   /* Remove default border and padding */
   border: none;
   margin: 0;
-  
+
   /* Remove default background and text color */
   background: none;
   color: inherit;
-  
+
   /* Optional: Reset box-sizing for consistent sizing */
   box-sizing: border-box;
-  
+
   /* Optional: Add a focus style if needed */
   outline: none;
   padding: 0 5px;
@@ -166,6 +166,11 @@ img {
   border-radius: 16px;
   gap: 1vw;
   padding: 5vh 5vw;
+  width: 100%;
+}
+
+.about-section .about-hero .about-content {
+  width: 60%;
 }
 
 .about-section .about-hero .about-content p {
@@ -174,6 +179,11 @@ img {
   font-weight: 400;
   line-height: 29.45px;
   /* text-align: justify; */
+}
+
+.about-section .about-hero .about-image {
+  text-align: center;
+  width: 40%;
 }
 
 /* about section end */
@@ -593,7 +603,7 @@ img {
     transform: translate(0px, 0px);
   }
 
- 
+
 
   .detail-section {
     width: 100%;

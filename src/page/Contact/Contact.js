@@ -30,7 +30,7 @@ export default function Contact() {
             <div className='part-3'>
               <div className="social-icons">
                 <a href="#"><span><img src={`${iconRoute}/twitter.svg`} alt="Twitter" /> </span> </a>
-                <a href="#"><span><img src={`${iconRoute}/insta.svg`} alt="Instagram" /></span></a>
+                <a href="https://www.instagram.com/musttech_01/?igsh=MzcwYnQxeXBja3Zi" target='_blank'><span><img src={`${iconRoute}/insta.svg`} alt="Instagram" /></span></a>
                 <a href="#"><span><img src={`${iconRoute}/discord.svg`} alt="LinkedIn" /></span></a>
               </div>
             </div>

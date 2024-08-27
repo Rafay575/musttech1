@@ -40,7 +40,19 @@
     text-align: center;
 }
 
+.pricing-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.1s ease-in ;
+}
+
 .card-header {
+    background-color: var(--font-color-1);
+    padding: 20px;
+    text-align: center;
+    height: 220.08px;
+}
+
+.card-header:hover {
     background-color: var(--font-color-1);
     padding: 20px;
     text-align: center;

@@ -5,6 +5,11 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Home.css';
+import { TypeAnimation } from 'react-type-animation';
+import CountUp from "react-countup";
+import { motion, useScroll } from "framer-motion"
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Home() {
   const imgRoute = ASSET_PATHS.IMG_URL
@@ -19,6 +24,7 @@ export default function Home() {
     autoplaySpeed: 3000,
 
   };
+const navigate = useNavigate()
 
   return (
     <>
@@ -30,8 +36,21 @@ export default function Home() {
               <h1>Crafting Digital Excellence Your Vision, <span>
                 Our Expertise.
               </span></h1>
-              <p>
-                Transforming Your Concepts into Concrete Achievements.|                </p>
+
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  'Transforming Your Concepts into Concrete Achievements.',
+                  1000, // wait 1s before replacing "Mice" with "Hamsters"
+                  'Turning Your Imagination into Tangiable Creations.',
+                  1000, // wait 1s before replacing "Mice" with "Hamsters"
+                ]}
+                wrapper="p"
+                speed={50}
+                repeat={Infinity}
+              />
+
+
             </div>
 
             <div className='image'>
@@ -47,7 +66,7 @@ export default function Home() {
                 <img src={`${iconRoute}/user.svg`} alt='img_1' />
                 {/* <span> Full Name</span> */}
                 <input type="text" placeholder="Full Name" />
-              
+
               </div>
               <div className='title'>
                 <img src={`${iconRoute}/email2.svg`} alt='img_1' />
@@ -56,7 +75,7 @@ export default function Home() {
 
               </div>
               <div className='title'>
-                <img src={`${iconRoute}/phone.svg`} alt='img_1' />
+                <img src={`${iconRoute}/phone3.svg`} alt='img_1' />
                 {/* <span>Phone Number</span> */}
                 <input type="text" placeholder="Phone Number" />
               </div>
@@ -88,23 +107,24 @@ export default function Home() {
 
             <div className='box'>
               <img src={`${imgRoute}/check.png`} alt='img_1' />
-              <span>100+</span>
+              {/* <span>100+</span> */}
+              <CountUp start={0} end={100} duration={3} suffix="+" />
               <p>PROJECTS COMPLETED</p>
             </div>
             <div className='box'>
               <img src={`${imgRoute}/rating.png`} alt='img_1' />
-              <span>100+</span>
-              <p>PROJECTS COMPLETED</p>
+              <CountUp start={0} end={100} duration={3} suffix="%" />
+              <p>HAPPY CLIENTS</p>
             </div>
             <div className='box'>
               <img src={`${imgRoute}/git.png`} alt='img_1' />
-              <span>100+</span>
-              <p>PROJECTS COMPLETED</p>
+              <CountUp start={0} end={1000} duration={3} suffix="+" />
+              <p>CODE COMMIT</p>
             </div>
             <div className='box'>
               <img src={`${imgRoute}/cycle.png`} alt='img_1' />
-              <span>100+</span>
-              <p>PROJECTS COMPLETED</p>
+              <CountUp start={0} end={500} duration={3} suffix="+" />
+              <p>PROJECTS REVIEW</p>
             </div>
 
           </div>
@@ -155,7 +175,7 @@ export default function Home() {
             </div>
 
             <div className='services-btn'>
-              <button className="more-button">
+              <button className="more-button" onClick={()=>navigate("/services")}>
                 MORE
                 <span className="corner top-left"></span>
                 <span className="corner top-right"></span>
@@ -167,7 +187,7 @@ export default function Home() {
 
           </div>
 
-          <div className='tech-section'>
+          <div className='tech-section' >
             <h1>OUR CORE TECHNALOGIES</h1>
             <div className='tech-hero'>
               <div className='tech-content'>
