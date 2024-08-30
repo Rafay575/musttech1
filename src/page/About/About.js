@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '../../component/Layout/Layout'
 import ASSET_PATHS from '../../constant'
 import './About.css';
+import BriefFacts from '../../component/Layout/BriefFacts';
+import WhyUs from '../../component/Layout/WhyUs';
 
 export default function About() {
     const imgRoute = ASSET_PATHS.IMG_URL
@@ -11,7 +13,7 @@ export default function About() {
             <Layout>
                 <div className="about-us">
 
-                    <div className='about-seciton-1'>
+                    {/* <div className='about-seciton-1'>
                         <div className='content'>
                             <h1>Symbol of
                                 Quality
@@ -22,7 +24,7 @@ export default function About() {
                             <img src={`${iconRoute}/aboutLogo.svg`} alt='img_1' />
                         </div>
 
-                    </div>
+                    </div> */}
 
                     <div className='about-seciton-2'>
                         <div className='about-description'>
@@ -47,7 +49,9 @@ export default function About() {
                         </div>
 
                     </div>
-
+                    <div>
+                        <BriefFacts />
+                    </div>
                     <div className='about-seciton-3'>
                         <h2>CO FOUNDER </h2>
 
@@ -108,7 +112,7 @@ export default function About() {
                         </div>
 
                     </div>
-
+                    <WhyUs />
                 </div>
             </Layout>
 

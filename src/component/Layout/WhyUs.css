@@ -1,0 +1,56 @@
+.why-us-section {
+width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+    padding: 10vh 5vw;
+  }
+  
+  .why-us-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: start;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    flex: 1;
+    max-width: 22%;
+    min-width: 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: justify;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon {
+    width: 50px;
+    margin-bottom: 20px;
+    color: #111;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #111;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
